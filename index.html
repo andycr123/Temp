@@ -3,12 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shorcut icon" href="">
-    <title>Convert Temp</title>
+    <link rel="shorcut icon" href="./img/icons8-temperatura-48.png">
+    <title>Temperature Converter</title>
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    
-</body>
+    <div class="container">
+        <h1>Convertidor de Temperatura</h1>
+        <div class="input-group">
+            <label for="temperature">Ingresa la temperatura:</label>
+            <input type="number" id="temperature" placeholder="Ingresa un valor">
+        </div>
+        <div class="select-group">
+            <label for="unit">Selecciona la unidad:</label>
+            <select id="unit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+        </div>
+        <button id="convert-btn">Convertir</button>
+        <div id="output"></div>
+        <div class="thermometer">
+            <div class="thermometer-fill" id="thermometer-fill"></div>
+        </div>
+    </div>
     <script src="./app.js"></script>
+</body>
 </html>
